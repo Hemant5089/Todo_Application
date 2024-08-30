@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#243CB8"
+    tools:context=".DataInsertActivity"
+    tools:ignore="ExtraText">
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="60dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/title"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/textInputLayout"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginEnd="32dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/title"
+        android:layout_width="370dp"
+        android:layout_height="60dp"
+        android:layout_margin="60dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/back_radius"
+        android:hint="Enter The Title"
+        android:textColor="@color/black"
+        android:textColorHint="#393737"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/disp"
+        android:layout_width="match_parent"
+        android:layout_height="512dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/back_radius"
+        android:gravity="top"
+        android:textColorHint="#393737"
+        android:hint="Add description"
+        android:inputType="textMultiLine"
+        android:maxLines="10"
+        android:textColor="@color/black"
+        android:minLines="5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+        app:layout_constraintVertical_bias="0.122" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/add"
+        android:layout_width="154dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#D44B4B"
+        android:textColor="@color/black"
+        android:text="Add In List"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/disp"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
